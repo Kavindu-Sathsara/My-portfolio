@@ -1,0 +1,33 @@
+@media (max-width: 960px) {
+  .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .skill-grid, .project-grid, .card-grid, .blog-grid, .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 740px) {
+  .nav-links { display: none; }
+  .menu-toggle { display: inline-grid; place-items: center; }
+  .hero-stats { grid-template-columns: 1fr; }
+  .skill-grid, .project-grid, .card-grid, .blog-grid, .gallery-grid, .form-grid { grid-template-columns: 1fr; }
+  .filter-row { justify-content: flex-start; }
+  .mobile-nav {
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 0.8rem 0 0.2rem;
+    border-top: 1px solid var(--border);
+  }
+  .mobile-nav.open {
+    display: grid;
+  }
+  .mobile-nav a {
+    padding: 0.7rem 0;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .section-shell { padding: 4.4rem 0; }
+}
+
+@media (min-width: 741px) {
+  .menu-toggle { display: none; }
+  .mobile-nav { display: none; }
+}

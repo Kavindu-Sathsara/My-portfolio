@@ -1,0 +1,36 @@
+.fade-in { animation: fadeIn 0.8s ease both; }
+.slide-up { animation: slideUp 0.8s ease both; }
+.zoom-in { animation: zoomIn 0.8s ease both; }
+.scale-in { animation: scaleIn 0.7s ease both; }
+.blob { animation: floatBlob 8s ease-in-out infinite; }
+.glow { animation: glowPulse 2.8s ease-in-out infinite; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floatBlob {
+  0%,100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-12px) translateX(8px); }
+}
+
+@keyframes glowPulse {
+  0%,100% { box-shadow: 0 0 0 rgba(6,182,212,.15); }
+  50% { box-shadow: 0 0 40px rgba(6,182,212,.28); }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A premium developer portfolio with glassmorphism, motion, and a polished dark/light experience." />
+    <meta name="theme-color" content="#020617" />
+    <meta property="og:title" content="Arielle Chen | Senior Frontend Engineer" />
+    <meta property="og:description" content="Crafting elegant user experiences with modern frontend engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arielle Chen | Senior Frontend Engineer" />
+    <meta name="twitter:description" content="Crafting elegant user experiences with modern frontend engineering." />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Kavindu Sathsara | Undergraduate</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress-bar"></div>
+    <div class="preloader"><div class="ring"></div></div>
+    <canvas id="particles"></canvas>
+
+    <div class="command-palette" id="command-palette">
+      <div class="command-card">
+        <input type="text" id="command-input" placeholder="Type a command or press Esc to close" aria-label="Command palette" />
+        <div class="command-ops">
+          <div class="command-item">Go to About</div>
+          <div class="command-item">Go to Projects</div>
+          <div class="command-item">Go to Contact</div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container navbar">
+        <a class="logo" href="#home" aria-label="Go to home"><span>Kavindu </span>SATHSARA</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+          <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+      <div class="container mobile-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section-shell">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="section-eyebrow">Undergraduate | Networking Enthusiast </div>
+            <h1>Hello <span class="accent">I'm</span> Kavinndu Sathsara<br /><span class="accent" data-typing>Undergraduate</span></h1>
+            <p>I'm a BICT undergraduate from Sri Lanka, passionate about software development, networking and building practical digital solutions.</p>
+            <p><strong> in Java, C, HTML, CSS, JavaScript, MySQL, and Git/GitHub.</strong></p>
+            <p><strong> about solving real-world problems through clean, efficient, and reliable code while continuously improving my technical skills.</strong></p>
+            <p><strong> expanding my knowledge in Data Structures & Algorithms, Web Development, Computer Networks, and modern software engineering practices.</strong></p>
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary magnetic" href="assets/Resume.pdf" download>Download CV</a>
+              <a class="btn btn-secondary magnetic" href="#contact">Contact Me</a>
+              <a class="btn btn-ghost magnetic" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="social-row">
+              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <img src="https://img.icons8.com/?size=100&id=16318&format=png&color=000000" alt="GitHub" width="22" height="22" />
+              </a>
+              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <img src="https://img.icons8.com/?size=100&id=85348&format=png&color=000000" alt="LinkedIn" width="22" height="22" />
+              </a>
+              <a class="social-pill" href="mailto:sathsara77kavindu@gmail.com" aria-label="Email">
+                <img src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=000000" alt="Email" width="22" height="22" />
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="orb blob"></div>
+            <div class="hero-card glass">
+              <img class="hero-image" src="./assets/images/heroimg.jpg" alt="Portrait of Arielle Chen" loading="eager" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell">
+        <div class="container about-grid">
+          <div class="section-card reveal about-content">
+            <div class="section-heading">
+              <div class="section-eyebrow">About</div>
+              <h2>Designing systems that feel both alive and effortless.</h2>
+              <p>I blend frontend engineering with product strategy to create experiences that are elegant, scalable, and built to last.</p>
+            </div>
+            <div class="about-summary">
+              <p>As a BICT undergraduate and passionate networking enthusiast, I build digital solutions that are both technically strong and visually compelling.</p>
+              <ul>
+                <li>Expertise in modern web development, clean architecture, and accessible design.</li>
+                <li>Strong background in algorithms, networking, and backend integration.</li>
+                <li>Focused on delivering performance-driven, maintainable experiences.</li>
+              </ul>
+            </div>
+            <div class="about-tabs" role="tablist" aria-label="About tabs">
+              <button class="about-tab active" type="button" data-tab="education">Education</button>
+              <button class="about-tab" type="button" data-tab="experience">Experience</button>
+              <button class="about-tab" type="button" data-tab="journey">Journey</button>
+            </div>
+            <div class="about-panel active" id="panel-education">
+              <div class="timeline">
+                <div class="timeline-item"><strong>B.Sc. Computer Science</strong><span>University of California — 2017</span></div>
+                <div class="timeline-item"><strong>UI/UX Specialization</strong><span>Google UX Design — 2019</span></div>
+              </div>
+            </div>
+            <div class="about-panel" id="panel-experience">
+              <div class="timeline">
+                <div class="timeline-item"><strong>Lead Frontend Engineer</strong><span>Northstar Labs • 2022–Present</span></div>
+                <div class="timeline-item"><strong>Senior Product Engineer</strong><span>Helio Studio • 2019–2022</span></div>
+              </div>
+            </div>
+            <div class="about-panel" id="panel-journey">
+              <div class="timeline">
+                <div class="timeline-item"><strong>Started with interactive marketing sites</strong><span>Iterating toward full product experiences</span></div>
+                <div class="timeline-item"><strong>Now building flagship platforms</strong><span>Focused on performance, accessibility, and delight</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <!-- <div class="section-eyebrow">Skills</div> -->
+
+          </div>
+          <div class="skill-carousel reveal" aria-label="Skills carousel">
+            <div class="skill-track">
+              <span class="skill-pill html"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /><span>HTML</span></span>
+              <span class="skill-pill css"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" /><span>CSS</span></span>
+              <span class="skill-pill js"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" /><span>JavaScript</span></span>
+              <span class="skill-pill java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" /><span>Java</span></span>
+              <span class="skill-pill javafx"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JavaFX" /><span>JavaFX</span></span>
+              <span class="skill-pill python"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" /><span>Python</span></span>
+              <span class="skill-pill git"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" /><span>Git</span></span>
+              <span class="skill-pill github"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" /><span>GitHub</span></span>
+              <span class="skill-pill html"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /><span>HTML</span></span>
+              <span class="skill-pill css"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" /><span>CSS</span></span>
+              <span class="skill-pill js"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" /><span>JavaScript</span></span>
+              <span class="skill-pill java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" /><span>Java</span></span>
+              <span class="skill-pill javafx"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JavaFX" /><span>JavaFX</span></span>
+              <span class="skill-pill python"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" /><span>Python</span></span>
+              <span class="skill-pill git"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" /><span>Git</span></span>
+              <span class="skill-pill github"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" /><span>GitHub</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Projects</div>
+            <h2>Selected work with measurable product impact.</h2>
+            <p>Each project balances storytelling, precision engineering, and a strong product lens.</p>
+          </div>
+          <div class="filter-row reveal">
+            <div class="filter-group">
+              <button class="filter-chip active" type="button" data-filter="all">All</button>
+              <button class="filter-chip" type="button" data-filter="web">Web</button>
+              <button class="filter-chip" type="button" data-filter="security">Security</button>
+              <button class="filter-chip" type="button" data-filter="product">Product</button>
+            </div>
+            <input class="search-input" id="project-search" type="search" placeholder="Search projects" aria-label="Search projects" />
+          </div>
+          <div class="project-grid">
+            <article class="project-card section-card reveal" data-category="web" data-title="NeonOS" data-summary="A terminal-inspired operating system UI with immersive motion." tabindex="0">
+              <h3>NeonOS</h3>
+              <p>A terminal-inspired operating system UI with immersive motion.</p>
+              <div class="meta"><span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JS</span></div>
+              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            </article>
+            <article class="project-card section-card reveal" data-category="security" data-title="Signal Vault" data-summary="A secure dashboard for privacy workflows and threat analytics." tabindex="0">
+              <h3>Signal Vault</h3>
+              <p>A secure dashboard for privacy workflows and threat analytics.</p>
+              <div class="meta"><span class="badge">Security</span><span class="badge">Analytics</span></div>
+              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            </article>
+            <article class="project-card section-card reveal" data-category="product" data-title="Lumen Commerce" data-summary="Commerce experience focused on high-conversion storytelling." tabindex="0">
+              <h3>Lumen Commerce</h3>
+              <p>Commerce experience focused on high-conversion storytelling.</p>
+              <div class="meta"><span class="badge">UX</span><span class="badge">Design</span><span class="badge">Performance</span></div>
+              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Certificates</div>
+            <h2>Credentials that support a craft-led approach.</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="certificate-card reveal"><h3>Google UX Design</h3><p>Professional certification in user research and interface design.</p></article>
+            <article class="certificate-card reveal"><h3>Frontend Performance</h3><p>Advanced practices for optimization, rendering, and responsiveness.</p></article>
+            <article class="certificate-card reveal"><h3>Accessibility Specialist</h3><p>Certification in inclusive design, WCAG, and keyboard navigation.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="photography" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Photography</div>
+            <h2>Frames from the world beyond the screen.</h2>
+          </div>
+          <div class="filter-row reveal">
+            <div class="filter-group">
+              <button class="filter-chip active gallery-filter" type="button" data-filter="all">All</button>
+              <button class="filter-chip gallery-filter" type="button" data-filter="urban">Urban</button>
+              <button class="filter-chip gallery-filter" type="button" data-filter="nature">Nature</button>
+            </div>
+          </div>
+          <div class="gallery-grid">
+            <article class="photo-card reveal" data-category="urban" data-src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" tabindex="0"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="City streets" loading="lazy" /></article>
+            <article class="photo-card reveal" data-category="nature" data-src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" tabindex="0"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape" loading="lazy" /></article>
+            <article class="photo-card reveal" data-category="urban" data-src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80" tabindex="0"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80" alt="Night skyline" loading="lazy" /></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Blog</div>
+            <h2>Notes on design systems, momentum, and crafting meaningful products.</h2>
+          </div>
+          <div class="filter-row reveal">
+            <div class="filter-group">
+              <button class="filter-chip active blog-filter" type="button" data-filter="all">All</button>
+              <button class="filter-chip blog-filter" type="button" data-filter="design">Design</button>
+              <button class="filter-chip blog-filter" type="button" data-filter="engineering">Engineering</button>
+            </div>
+            <input class="search-input" id="blog-search" type="search" placeholder="Search posts" aria-label="Search blog posts" />
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card reveal" data-category="design" data-title="Design systems that feel human" data-summary="How to keep systems expressive without losing clarity.">
+              <h3>Design systems that feel human</h3>
+              <p>How to keep systems expressive without losing clarity.</p>
+              <div class="actions"><a class="btn btn-secondary" href="#">Read article</a></div>
+            </article>
+            <article class="blog-card reveal" data-category="engineering" data-title="Performance tuning for modern products" data-summary="A practical workflow for tracing bottlenecks and shipping faster.">
+              <h3>Performance tuning for modern products</h3>
+              <p>A practical workflow for tracing bottlenecks and shipping faster.</p>
+              <div class="actions"><a class="btn btn-secondary" href="#">Read article</a></div>
+            </article>
+            <article class="blog-card reveal" data-category="design" data-title="Motion as a product language" data-summary="Using motion to communicate hierarchy and confidence.</">
+              <h3>Motion as a product language</h3>
+              <p>Using motion to communicate hierarchy and confidence.</p>
+              <div class="actions"><a class="btn btn-secondary" href="#">Read article</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Achievements</div>
+            <h2>Trusted across product, design, and engineering.</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="service-card reveal"><h3>20+ Launches</h3><p>Delivered product experiences for startups and established teams.</p></article>
+            <article class="service-card reveal"><h3>9 Countries</h3><p>Collaborated with distributed teams and international clients.</p></article>
+            <article class="service-card reveal"><h3>4x Faster Iteration</h3><p>Created systems that shorten design-to-development cycles.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Services</div>
+            <h2>Premium support for ambitious teams.</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="service-card reveal"><h3>Product Design</h3><p>UI/UX strategy, design systems, and interface polish.</p></article>
+            <article class="service-card reveal"><h3>Frontend Engineering</h3><p>Scalable implementation from prototype to production.</p></article>
+            <article class="service-card reveal"><h3>Performance Audits</h3><p>Diagnose, optimize, and elevate experience quality.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Testimonials</div>
+            <h2>What collaborators say.</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="testimonial-card reveal"><p>“Arielle brings calm clarity to complex interfaces, and every release feels intentional.”</p><strong>— Maya, Product Lead</strong></article>
+            <article class="testimonial-card reveal"><p>“The result didn’t just look amazing — it performed beautifully and converted.”</p><strong>— Rhys, Founder</strong></article>
+            <article class="testimonial-card reveal"><p>“Her design thinking and engineering maturity are rare to find together.”</p><strong>— Nina, VP Design</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">FAQ</div>
+            <h2>Common questions before we build together.</h2>
+          </div>
+          <div class="skill-grid">
+            <details class="faq-item reveal">
+              <summary>Can you work across design and development?</summary>
+              <p>Yes. I bridge both sides of the product process and can guide from concept through delivery.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Do you support responsive and accessible builds?</summary>
+              <p>Absolutely. Accessibility, responsiveness, and performance are built into the process from the start.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>What is your typical collaboration style?</summary>
+              <p>Thoughtful, iterative, and transparent. I like tight feedback loops and practical progress.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="repos" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">GitHub</div>
+            <h2>Latest repositories from the public feed.</h2>
+          </div>
+          <div class="skill-grid" id="repos-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell">
+        <div class="container contact-grid">
+          <div class="contact-card reveal">
+            <div class="section-eyebrow">Contact</div>
+            <h2>Let’s make something remarkable.</h2>
+            <p>Whether you need a polished launch page, a production-grade platform, or a design system upgrade, I’m ready to help.</p>
+            <div class="contact-list">
+              <div>✉ hello@arielle.dev</div>
+              <div>📍 Remote • Available worldwide</div>
+              <div>🕒 Open for collaborations in 2026</div>
+            </div>
+            <button class="btn btn-secondary" type="button" id="copy-email">Copy email</button>
+            <iframe class="map-frame" title="Map to Arielle's location" src="https://www.google.com/maps?q=San%20Francisco&output=embed" loading="lazy"></iframe>
+          </div>
+          <form class="contact-card reveal" id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" />
+                <div class="error" aria-live="polite"></div>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
+                <div class="error" aria-live="polite"></div>
+              </div>
+            </div>
+            <div class="field" style="margin-top: 1rem;">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project"></textarea>
+              <div class="error" aria-live="polite"></div>
+            </div>
+            <div class="actions" style="margin-top: 1rem;">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <span id="form-status" class="error"></span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Arielle Chen. Crafted for the modern web.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true">
+        <div class="modal-header">
+          <h3>Project preview</h3>
+          <button class="close-btn" type="button" aria-label="Close preview">×</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="lightbox" aria-hidden="true">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Photography preview</h3>
+          <button class="close-btn" type="button" aria-label="Close preview">×</button>
+        </div>
+        <img src="" alt="Photography preview" />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/command.js"></script>
+  </body>
+</html>
+
