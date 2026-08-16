@@ -3,8 +3,8 @@ const certificateData = [
   {
     id: 1,
     title: "C Intermediate",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
+    issuer: "Sololearn",
+    date: "19/03/2026",
     url: "assets/certificates/C Intermediate.pdf",
     category: "programming"
   },
@@ -12,31 +12,31 @@ const certificateData = [
     id: 2,
     title: "C Essentials",
     issuer: "Cisco Networking Academy",
-    date: "2024",
+    date: "18/05/2026",
     url: "assets/certificates/C_Essentials_1_certificate_sathsara77kavindu-gmail-com_dd561785-30f6-45b4-b101-c6c52dfe61a5.pdf",
     category: "programming"
   },
   {
     id: 3,
     title: "Introduction to C",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
+    issuer: "Sololearn",
+    date: "15/03/2025",
     url: "assets/certificates/Introduction to C.pdf",
     category: "programming"
   },
   {
     id: 4,
     title: "Python for Beginners",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
+    issuer: "Centre for Open & Distance Learning (CODL) University of Moratuwa, Sri Lanka",
+    date: "16/03/2024",
     url: "assets/certificates/Python_for_Beginners_E-Certificate.pdf",
     category: "programming"
   },
   {
     id: 5,
     title: "Web Design for Beginners",
-    issuer: "Cisco Networking Academy",
-    date: "2024",
+    issuer: "Centre for Open & Distance Learning (CODL) University of Moratuwa, Sri Lanka",
+    // date: "2024",
     url: "assets/certificates/Web_Design_for_Beginners_E-Certificate.pdf",
     category: "web"
   },
@@ -44,7 +44,7 @@ const certificateData = [
     id: 6,
     title: "Getting Started with Cisco Packet Tracer",
     issuer: "Cisco Networking Academy",
-    date: "2024",
+    date: "13/14/2026",
     url: "assets/certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate_sathsara77kavindu-gmail-com_2c00fa4c-a17b-4b45-bc4e-1eaf34e15d12.pdf",
     category: "networking"
   },
@@ -52,8 +52,16 @@ const certificateData = [
     id: 7,
     title: "Networking Basics",
     issuer: "Cisco Networking Academy",
-    date: "2024",
+    date: "14/08/2026",
     url: "assets/certificates/Networking_Basics_certificate_sathsara77kavindu-gmail-com_701ccc79-cba7-4a81-8262-68e5ab6583d7.pdf",
+    category: "networking"
+  },
+{
+    id: 8,
+    title: "Introduction to Kubernetes (LFS158)",
+    issuer: "The Linux Foundation",
+    date: "15/08/2026",
+    url: "assets/certificates/Introduction_to_Kubernetes_(LFS158)_certificate_sathsara77kavindu-gmail-com_2c00fa4c-a17b-4b45-bc4e-1eaf34e15d12.pdf",
     category: "networking"
   }
 ];

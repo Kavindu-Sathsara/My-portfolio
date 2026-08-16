@@ -64,6 +64,19 @@ function handlePreloader() {
   });
 }
 
+function normalizeHeroImage() {
+  const heroImage = document.querySelector('.hero-image');
+  if (!heroImage) return;
+
+  heroImage.addEventListener('load', () => {
+    heroImage.style.transform = 'rotate(0deg)';
+    heroImage.style.opacity = '1';
+  });
+
+  heroImage.style.opacity = '1';
+  heroImage.style.transform = 'rotate(0deg)';
+}
+
 function initParallax() {
   const cards = document.querySelectorAll('.hero-card, .section-card, .skill-card, .project-card');
   window.addEventListener('mousemove', (event) => {
@@ -86,6 +99,7 @@ function init() {
   updateProgressBar();
   revealOnScroll();
   handlePreloader();
+  normalizeHeroImage();
   initParallax();
   backToTopToggle();
   window.addEventListener('scroll', () => {
