@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A premium developer portfolio with glassmorphism, motion, and a polished dark/light experience." />
+    <meta name="theme-color" content="#020617" />
+    <meta property="og:title" content="Arielle Chen | Senior Frontend Engineer" />
+    <meta property="og:description" content="Crafting elegant user experiences with modern frontend engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arielle Chen | Senior Frontend Engineer" />
+    <meta name="twitter:description" content="Crafting elegant user experiences with modern frontend engineering." />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Kavindu Sathsara | Undergraduate</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress-bar"></div>
+    <div class="preloader"><div class="ring"></div></div>
+    <canvas id="particles"></canvas>
+
+    <div class="command-palette" id="command-palette">
+      <div class="command-card">
+        <input type="text" id="command-input" placeholder="Type a command or press Esc to close" aria-label="Command palette" />
+        <div class="command-ops">
+          <div class="command-item">Go to About</div>
+          <div class="command-item">Go to Projects</div>
+          <div class="command-item">Go to Contact</div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container navbar">
+        <a class="logo" href="#home" aria-label="Go to home"><span>Kavindu </span>SATHSARA</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Writting</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+          <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+      <div class="container mobile-nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Writting</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section-shell">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="section-eyebrow">Undergraduate | Networking Enthusiast </div>
+            <h1>Hello <span class="accent">I'm</span> Kavindu Sathsara<br /><span class="accent" data-typing>Undergraduate</span></h1>
+            <p>I'm a BICT undergraduate from Sri Lanka, passionate about software development, networking and building practical digital solutions.</p>
+            <p><strong> in Java, C, HTML, CSS, JavaScript, MySQL, and Git/GitHub.</strong></p>
+            <p><strong> about solving real-world problems through clean, efficient, and reliable code while continuously improving my technical skills.</strong></p>
+            <p><strong> expanding my knowledge in Data Structures & Algorithms, Web Development, Computer Networks, and modern software engineering practices.</strong></p>
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary magnetic" href="assets/Resume.pdf" download>Download CV</a>
+              <a class="btn btn-secondary magnetic" href="#contact">Contact Me</a>
+              <a class="btn btn-ghost magnetic" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="social-row">
+              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" width="22" height="22" />
+              </a>
+              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" width="22" height="22" />
+              </a>
+              <a class="social-pill" href="mailto:sathsara77kavindu@gmail.com" aria-label="Email">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/email.png" alt="Email" width="22" height="22" />
+              </a>
+              <a class="social-pill" href="https://www.blogger.com/profile/10187945015460676433" target="_blank" rel="noreferrer" aria-label="Blogger">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/blogger.png" alt="Blogger" width="22" height="22" />
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="orb blob"></div>
+            <div class="hero-card glass">
+              <img class="hero-image" src="./assets/images/heroimg.jpg" alt="Portrait of Arielle Chen" loading="eager" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell">
+        <div class="container about-grid">
+          <div class="section-card reveal about-content">
+            <div class="section-heading">
+              <div class="section-eyebrow">About Me</div>
+            </div>
+
+            <div class="about-summary">
+              <p>Hi, I'm Kavindu Sathsara, a BICT undergraduate passionate about networking, software development, and creative technology.</p>
+              <p>I'm currently strengthening my skills in Cisco networking, Linux, Java, front-end development, and data structures while building practical solutions.</p>
+              <p>My main direction is computer networking, and I enjoy learning how systems connect, communicate, and scale securely.</p>
+              <p>I also work creatively through design and technical writing, combining problem-solving with clear communication.</p>
+            </div>
+          </div>
+
+          <aside class="focus-panel reveal" aria-label="My focus areas">
+            <div class="focus-card glass">
+              <div class="focus-header">
+                <span class="focus-kicker">Core strengths</span>
+                <h3>MY FOCUS</h3>
+              </div>
+
+              <div class="network-visual" aria-hidden="true">
+                <span class="node node-1"></span>
+                <span class="node node-2"></span>
+                <span class="node node-3"></span>
+                <span class="node node-4"></span>
+                <span class="node node-5"></span>
+                <span class="connection c-1"></span>
+                <span class="connection c-2"></span>
+                <span class="connection c-3"></span>
+                <span class="connection c-4"></span>
+              </div>
+
+              <div class="focus-list">
+                <article class="focus-item focus-primary">
+                  <div class="focus-icon">🌐</div>
+                  <div class="focus-copy">
+                    <h4>Computer Networking</h4>
+                    <p>Cisco • Linux • Routing • Network Security</p>
+                  </div>
+                </article>
+
+                <article class="focus-item">
+                  <div class="focus-icon">💻</div>
+                  <div class="focus-copy">
+                    <h4>Software Development</h4>
+                    <p>Java • JavaScript • Data Structures</p>
+                  </div>
+                </article>
+
+                <article class="focus-item">
+                  <div class="focus-icon">🎨</div>
+                  <div class="focus-copy">
+                    <h4>Creative Design</h4>
+                    <p>Graphic Design • UI/UX</p>
+                  </div>
+                </article>
+
+                <article class="focus-item">
+                  <div class="focus-icon">✍️</div>
+                  <div class="focus-copy">
+                    <h4>Knowledge Sharing</h4>
+                    <p>Technical Writing • Continuous Learning</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="education" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Education</div>
+            <h2>Academic milestones and professional learning.</h2>
+          </div>
+
+          <div class="education-stack reveal">
+            <article class="education-card section-card">
+              <div class="edu-card">
+                <div class="edu-media">
+                  <div class="edu-icon">
+                    <img src="./assets/icons/SEUSL.png" alt="University logo" />
+                  </div>
+                  <div class="edu-dates">2024 — Present</div>
+                </div>
+                <div class="edu-content">
+                  <div class="edu-eyebrow">Higher Education</div>
+                  <h3>Bachelor of Information and Communication Technology</h3>
+                  <p class="muted">South Eastern University of Sri Lanka</p>
+                  <ul class="edu-tags">
+                    <li>Relevant: Software Engineering, Computer Networks, Mathematics, Cloud Computing</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card section-card">
+              <div class="edu-card">
+                <div class="edu-media">
+                  <div class="edu-icon">
+                    <img src="./assets/icons/Ananda.jpg" alt="A/L logo" />
+                  </div>
+                  <div class="edu-dates">2019 - 2022</div>
+                </div>
+                <div class="edu-content">
+                  <div class="edu-eyebrow">Advanced Level (A/L)</div>
+                  <h3>GCE Advanced Level (Engineering Technology Stream)</h3>
+                  <p class="muted">Emphasis on ICT, mathematics and analytical thinking, strong practical and theory performance.</p>
+                  <ul>
+                    <li>Focused on ICT, ET and SFT.</li>
+                    <li>Completed A/L with strong performance across practical and theory subjects.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card section-card">
+              <div class="edu-card">
+                <div class="edu-media">
+                  <div class="edu-icon">
+                    <img src="./assets/icons/Adikaram.jpg" alt="School logo" />
+                  </div>
+                </div>
+                <div class="edu-content">
+                  <div class="edu-eyebrow">School Education</div>
+                  <h3>E.W Adikaram College, Mathugama</h3>
+                  <p class="muted">GCE Ordinary Level - strong foundation in mathematics and science</p>
+                  <ul>
+                    <li>Completed O/L with distinction in Mathematics, English and Science.</li>
+                    <li>Built fundamentals in problem solving, logical reasoning and data interpretation.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Certificates</div>
+            <h2>Professional Certifications &amp; Learning Achievements</h2>
+            <p>Continuous learning, professional certifications, and technical growth.</p>
+          </div>
+
+          <div class="certificate-carousel reveal">
+            <div class="certificate-viewport">
+              <div class="certificate-track" id="certificate-carousel" aria-live="polite">
+                <!-- Slides populated by JavaScript -->
+              </div>
+
+              <button class="carousel-control carousel-prev" type="button" aria-label="Previous certificate">❮</button>
+              <button class="carousel-control carousel-next" type="button" aria-label="Next certificate">❯</button>
+            </div>
+
+            <div class="carousel-indicators" id="carousel-indicators" aria-label="Certificate slides"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <!-- <div class="section-eyebrow">Skills</div> -->
+
+          </div>
+          <div class="skill-carousel reveal" aria-label="Skills carousel">
+            <div class="skill-track">
+              <span class="skill-pill html"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /><span>HTML</span></span>
+              <span class="skill-pill css"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" /><span>CSS</span></span>
+              <span class="skill-pill js"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" /><span>JavaScript</span></span>
+              <span class="skill-pill java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" /><span>Java</span></span>
+              <span class="skill-pill javafx"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JavaFX" /><span>JavaFX</span></span>
+              <span class="skill-pill python"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" /><span>Python</span></span>
+              <span class="skill-pill git"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" /><span>Git</span></span>
+              <span class="skill-pill github"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" /><span>GitHub</span></span>
+              <span class="skill-pill html"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /><span>HTML</span></span>
+              <span class="skill-pill css"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" /><span>CSS</span></span>
+              <span class="skill-pill js"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" /><span>JavaScript</span></span>
+              <span class="skill-pill java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" /><span>Java</span></span>
+              <span class="skill-pill javafx"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JavaFX" /><span>JavaFX</span></span>
+              <span class="skill-pill python"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" /><span>Python</span></span>
+              <span class="skill-pill git"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" /><span>Git</span></span>
+              <span class="skill-pill github"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" /><span>GitHub</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="projects" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Projects</div>
+            <h2>Selected work with measurable product impact.</h2>
+            <p>Each project balances storytelling, precision engineering, and a strong product lens.</p>
+          </div>
+          <div class="filter-row reveal">
+            <div class="filter-group">
+              <button class="filter-chip active" type="button" data-filter="all">All</button>
+              <button class="filter-chip" type="button" data-filter="web">Web</button>
+              <button class="filter-chip" type="button" data-filter="security">Security</button>
+              <button class="filter-chip" type="button" data-filter="product">Product</button>
+            </div>
+            <input class="search-input" id="project-search" type="search" placeholder="Search projects" aria-label="Search projects" />
+          </div>
+          <div class="project-grid">
+            <article class="project-card section-card reveal" data-category="web" data-title="NeonOS" data-summary="A terminal-inspired operating system UI with immersive motion." tabindex="0">
+              <h3>NeonOS</h3>
+              <p>A terminal-inspired operating system UI with immersive motion.</p>
+              <div class="meta"><span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JS</span></div>
+              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            </article>
+            <article class="project-card section-card reveal" data-category="security" data-title="Signal Vault" data-summary="A secure dashboard for privacy workflows and threat analytics." tabindex="0">
+              <h3>Signal Vault</h3>
+              <p>A secure dashboard for privacy workflows and threat analytics.</p>
+              <div class="meta"><span class="badge">Security</span><span class="badge">Analytics</span></div>
+              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            </article>
+            <article class="project-card section-card reveal" data-category="product" data-title="Lumen Commerce" data-summary="Commerce experience focused on high-conversion storytelling." tabindex="0">
+              <h3>Lumen Commerce</h3>
+              <p>Commerce experience focused on high-conversion storytelling.</p>
+              <div class="meta"><span class="badge">UX</span><span class="badge">Design</span><span class="badge">Performance</span></div>
+              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="blog" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Blog</div>
+            <h2>Notes on Blogger about fundamentals of programming.</h2>
+          </div>
+          <div class="filter-row reveal">
+            <div class="filter-group">
+              <button class="filter-chip active blog-filter" type="button" data-filter="all">All</button>
+              <button class="filter-chip blog-filter" type="button" data-filter="design">Design</button>
+              <button class="filter-chip blog-filter" type="button" data-filter="engineering">Engineering</button>
+            </div>
+            <input class="search-input" id="blog-search" type="search" placeholder="Search posts" aria-label="Search blog posts" />
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card reveal">
+              <h3>Introduction to Programming and Problem Solving</h3>
+              <p class="muted">A short introduction covering core programming concepts and problem-solving techniques.</p>
+              <div class="actions"><a class="btn btn-secondary" href="https://kstechnexus.blogspot.com/2026/08/introduction-to-programming-and-problem.html" target="_blank" rel="noreferrer">Read article</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div class="section-eyebrow">Contact</div>
+            <h2 class="contact-title">Say Hii... <span class="gradient">Let’s talk</span></h2>
+            <p class="contact-sub">Have a project, a research idea, or just want to talk shop? My inbox is open.</p>
+          </div>
+
+          <div class="contact-hero glass reveal">
+            <div class="contact-actions">
+              <a class="btn btn-whatsapp" href="https://wa.me/94774213415" target="_blank" rel="noreferrer">WhatsApp Me</a>
+              <a class="btn btn-outline" href="mailto:sathsaraa77kavindu@gmail.com">Schedule a Meeting</a>
+            </div>
+
+            <div class="contact-pills">
+              <a class="contact-pill" href="mailto:sathsaraa77kavindu@gmail.com">✉ sathsaraa77kavindu@gmail.com</a>
+              <div class="contact-pill">📞 +94 774 213 415</div>
+              <div class="contact-pill">📍 Colombo, Sri Lanka</div>
+            </div>
+
+            <div class="contact-social">
+              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" width="20" height="20"/></a>
+              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer"><img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" width="20" height="20"/></a>
+              <a class="social-pill" href="mailto:sathsaraa77kavindu@gmail.com" aria-label="Email"><img src="https://img.icons8.com/ios-glyphs/48/000000/email.png" alt="Email" width="20" height="20"/></a>
+              <a class="social-pill" href="https://www.blogger.com/profile/10187945015460676433" target="_blank" rel="noreferrer"><img src="https://img.icons8.com/ios-glyphs/48/000000/blogger.png" alt="Blogger" width="20" height="20"/></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+
+        <!-- Brand / About -->
+        <div class="footer-brand">
+          <!-- <a href="#home" class="footer-logo">KS</a> -->
+
+          <h3>Kavindu Sathsara</h3>
+
+          <p>
+            IT undergraduate, developer and networking enthusiast.
+            I write about programming, networking and practical projects.
+          </p>
+
+          <div class="footer-status">
+            <span class="status-dot"></span>
+            <span>Available for opportunities</span>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-column">
+          <h4>Explore</h4>
+
+          <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Writing</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Focus -->
+        <div class="footer-column">
+          <h4>Focus</h4>
+
+          <ul>
+            <li>Software Development</li>
+            <li>Computer Networking</li>
+            <li>Web Development</li>
+            <li>Linux &amp; Systems</li>
+          </ul>
+        </div>
+
+        <!-- Connect -->
+        <div class="footer-column">
+          <h4>Connect</h4>
+
+          <div class="footer-socials">
+
+            <a
+              href="https://github.com/Kavindu-Sathsara"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/kavindu-sathsara-393956353/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href="mailto:sathsara77kavindu@gmail.com"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="footer-sep"></div>
+      </div>
+
+      <div class="container footer-bottom">
+
+        <p>
+          © <span id="year"></span> Kavindu Sathsara.
+          All rights reserved.
+        </p>
+
+        <p class="footer-made">
+          Designed &amp; built by Kavindu 👾
+        </p>
+
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true">
+        <div class="modal-header">
+          <h3>Project preview</h3>
+          <button class="close-btn" type="button" aria-label="Close preview">×</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="lightbox" aria-hidden="true">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Photography preview</h3>
+          <button class="close-btn" type="button" aria-label="Close preview">×</button>
+        </div>
+        <img src="" alt="Photography preview" />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/command.js"></script>
+    <script src="js/certificates.js"></script>
+  </body>
+</html>
+
