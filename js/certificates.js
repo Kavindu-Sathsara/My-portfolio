@@ -6,8 +6,9 @@ const certificateData = [
     issuer: "Sololearn",
     date: "19/03/2026",
     url: "assets/certificates/C Intermediate.pdf",
+    image: "assets/certificates/C Intermediate.png",
     category: "Programming",
-    icon: "C",
+    icon: "assets/icons/C+_Logo.png",
     type: "programming"
   },
   {
@@ -16,8 +17,9 @@ const certificateData = [
     issuer: "Cisco Networking Academy",
     date: "18/05/2026",
     url: "assets/certificates/C_Essentials_1_certificate_sathsara77kavindu-gmail-com_dd561785-30f6-45b4-b101-c6c52dfe61a5.pdf",
+    image: "assets/certificates/C_Essentials_1_certificate_sathsara77kavindu-gmail-com_dd561785-30f6-45b4-b101-c6c52dfe61a5.png",
     category: "Programming",
-    icon: "C",
+    icon: "assets/icons/C+_Logo.png",
     type: "programming"
   },
   {
@@ -26,8 +28,9 @@ const certificateData = [
     issuer: "Sololearn",
     date: "15/03/2025",
     url: "assets/certificates/Introduction to C.pdf",
+    image: "assets/certificates/Introduction to C.png",
     category: "Programming",
-    icon: "C",
+    icon: "assets/icons/C+_Logo.png",
     type: "programming"
   },
   {
@@ -36,8 +39,9 @@ const certificateData = [
     issuer: "Centre for Open & Distance Learning (CODL) University of Moratuwa, Sri Lanka",
     date: "16/03/2024",
     url: "assets/certificates/Python_for_Beginners_E-Certificate.pdf",
+    image: "assets/certificates/Python_for_Beginners_E-Certificate.png",
     category: "Programming",
-    icon: "PY",
+    icon: "assets/icons/python.jpg",
     type: "programming"
   },
   {
@@ -46,8 +50,9 @@ const certificateData = [
     issuer: "Centre for Open & Distance Learning (CODL) University of Moratuwa, Sri Lanka",
     date: "2024",
     url: "assets/certificates/Web_Design_for_Beginners_E-Certificate.pdf",
+    image: "assets/certificates/Web_Design_for_Beginners_E-Certificate.png",
     category: "Web",
-    icon: "WD",
+    icon: "assets/icons/images.png",
     type: "programming"
   },
   {
@@ -56,8 +61,9 @@ const certificateData = [
     issuer: "Cisco Networking Academy",
     date: "13/14/2026",
     url: "assets/certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate_sathsara77kavindu-gmail-com_2c00fa4c-a17b-4b45-bc4e-1eaf34e15d12.pdf",
+    image: "assets/certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate_sathsara77kavindu-gmail-com_2c00fa4c-a17b-4b45-bc4e-1eaf34e15d12.png",
     category: "Networking",
-    icon: "PT",
+    icon: "assets/icons/Cisco_Systems-Logo.wine.png",
     type: "networking"
   },
   {
@@ -66,8 +72,9 @@ const certificateData = [
     issuer: "Cisco Networking Academy",
     date: "14/08/2026",
     url: "assets/certificates/Networking_Basics_certificate_sathsara77kavindu-gmail-com_701ccc79-cba7-4a81-8262-68e5ab6583d7.pdf",
+    image: "assets/certificates/Networking_Basics_certificate_sathsara77kavindu-gmail-com_701ccc79-cba7-4a81-8262-68e5ab6583d7.png",
     category: "Networking",
-    icon: "NET",
+    icon: "assets/icons/Cisco_Systems-Logo.wine.png",
     type: "networking"
   },
   {
@@ -75,9 +82,10 @@ const certificateData = [
     title: "Introduction to Kubernetes (LFS158)",
     issuer: "The Linux Foundation",
     date: "15/08/2026",
-    url: "assets/certificates/Introduction_to_Kubernetes_(LFS158)_certificate_sathsara77kavindu-gmail-com_2c00fa4c-a17b-4b45-bc4e-1eaf34e15d12.pdf",
+    url: "assets/certificates/Introduction to K8s.pdf",
+    image: "assets/certificates/Introduction to K8s.png",
     category: "Cloud / Kubernetes",
-    icon: "K8s",
+    icon: "assets/icons/Kubernetes-Logo.wine.png",
     type: "kubernetes"
   }
 ];
@@ -116,9 +124,11 @@ class CertificateCarousel {
     this.container.style.setProperty('--visible-cards', this.getVisibleCards());
     this.container.innerHTML = certificateData.map((cert, index) => `
       <article class="certificate-slide ${index === this.currentIndex ? 'is-active' : ''}" data-index="${index}">
-        <div class="certificate-card section-card">
+        <div class="certificate-card section-card" style="--certificate-image: url('${cert.image}')">
           <div class="certificate-header">
-            <div class="certificate-icon ${cert.type}">${cert.icon}</div>
+            <div class="certificate-icon ${cert.type}">
+              <img src="${cert.icon}" alt="${cert.category} logo" loading="lazy">
+            </div>
             <span class="certificate-badge">${cert.category}</span>
           </div>
 
@@ -131,9 +141,9 @@ class CertificateCarousel {
           </div>
 
           <div class="actions">
-            <a class="certificate-link" href="${cert.url}" target="_blank" rel="noopener noreferrer">
+            <button class="certificate-link" type="button" data-certificate-index="${index}">
               View Certificate <span class="link-arrow">↗</span>
-            </a>
+            </button>
           </div>
         </div>
       </article>
@@ -161,6 +171,14 @@ class CertificateCarousel {
 
     if (prevBtn) prevBtn.addEventListener('click', () => this.prev());
     if (nextBtn) nextBtn.addEventListener('click', () => this.next());
+
+    this.container.addEventListener('click', (event) => {
+      const button = event.target.closest('.certificate-link');
+      if (!button) return;
+
+      const certificate = certificateData[Number(button.dataset.certificateIndex)];
+      openCertificateModal(certificate);
+    });
 
     if (viewport) {
       viewport.addEventListener('mouseenter', () => this.stopAutoPlay());
@@ -246,6 +264,49 @@ class CertificateCarousel {
     this.startAutoPlay();
   }
 }
+
+const certificateModal = document.getElementById('certificate-modal');
+const certificateModalBody = certificateModal?.querySelector('.certificate-modal-body');
+
+function openCertificateModal(certificate) {
+  if (!certificateModal || !certificateModalBody) return;
+
+  certificateModalBody.innerHTML = `
+    <div class="modal-header">
+      <div>
+        <h3 id="certificate-modal-title">${certificate.title}</h3>
+        <p class="muted">${certificate.issuer} · ${certificate.date}</p>
+      </div>
+      <button class="close-btn" type="button" aria-label="Close certificate preview">×</button>
+    </div>
+    <iframe class="certificate-viewer" src="${certificate.url}" title="${certificate.title} certificate"></iframe>
+    <div class="certificate-modal-actions">
+      <a class="btn btn-primary" href="${certificate.url}" target="_blank" rel="noopener noreferrer">Open in new tab ↗</a>
+    </div>
+  `;
+
+  certificateModal.classList.add('open');
+  certificateModal.setAttribute('aria-hidden', 'false');
+  certificateModalBody.querySelector('.close-btn').focus();
+}
+
+function closeCertificateModal() {
+  if (!certificateModal || !certificateModalBody) return;
+
+  certificateModal.classList.remove('open');
+  certificateModal.setAttribute('aria-hidden', 'true');
+  certificateModalBody.innerHTML = '';
+}
+
+certificateModal?.addEventListener('click', (event) => {
+  if (event.target === certificateModal || event.target.closest('.close-btn')) {
+    closeCertificateModal();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeCertificateModal();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const certificateCarousel = new CertificateCarousel('certificate-carousel', 'carousel-indicators');

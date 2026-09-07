@@ -168,13 +168,13 @@ body::after {
 .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
 
 .nav-actions { display: flex; align-items: center; gap: 0.75rem; }
-.theme-toggle, .menu-toggle { border: 0; background: rgba(255,255,255,0.06); color: var(--text); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; }
+.menu-toggle { border: 0; background: rgba(255,255,255,0.06); color: var(--text); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; }
 
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: grid;
   align-items: center;
-  padding: 3rem 0 6rem;
+  padding: 3rem 0 2rem;
 }
 .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center; }
 .hero-copy h1 { font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1.08; margin: 0 0 1rem; }
@@ -565,7 +565,11 @@ body::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(12, 24, 38, 0.82), rgba(15, 23, 42, 0.74));
+  background-color: #172033;
+  background-image: var(--certificate-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 24px;
   padding: 1.5rem;
@@ -581,8 +585,8 @@ body::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(6,182,212,0.14), rgba(59,130,246,0.12), rgba(168,85,247,0.1));
-  opacity: 0.9;
+  background: linear-gradient(135deg, rgba(2, 6, 23, 0.78), rgba(2, 6, 23, 0.38) 52%, rgba(2, 6, 23, 0.72));
+  opacity: 1;
   z-index: 0;
 }
 
@@ -625,6 +629,13 @@ body::after {
   border: 1px solid rgba(255,255,255,0.1);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 18px 30px rgba(15, 23, 42, 0.2);
   color: var(--text);
+}
+
+.certificate-icon img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .certificate-icon.networking { background: linear-gradient(135deg, rgba(6,182,212,0.18), rgba(59,130,246,0.2)); }
@@ -822,6 +833,10 @@ body::after {
 .carousel-dot {
   width: 11px;
   height: 11px;
+  flex: 0 0 11px;
+  aspect-ratio: 1;
+  padding: 0;
+  box-sizing: border-box;
   border-radius: 50%;
   background: rgba(255,255,255,0.2);
   border: 2px solid transparent;
@@ -888,6 +903,13 @@ body::after {
 .modal { width: min(900px, 100%); max-height: 90vh; overflow: auto; border-radius: 28px; padding: 1.4rem; background: var(--bg-elevated); border: 1px solid var(--border); box-shadow: var(--shadow); }
 .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .close-btn { border: 0; background: rgba(255,255,255,0.08); color: var(--text); width: 42px; height: 42px; border-radius: 50%; cursor: pointer; }
+.certificate-modal-body { width: min(1000px, 100%); }
+.certificate-modal-body .modal-header { align-items: flex-start; }
+.certificate-modal-body .modal-header h3 { margin: 0 0 0.35rem; }
+.certificate-modal-body .modal-header p { margin: 0; }
+.certificate-viewer { display: block; width: 100%; height: min(68vh, 720px); border: 1px solid var(--border); border-radius: 16px; background: #fff; }
+.certificate-modal-actions { display: flex; justify-content: flex-end; margin-top: 1rem; }
+.certificate-link { font: inherit; cursor: pointer; }
 
 .gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .gallery-card img, .photo-card img { width: 100%; min-height: 210px; object-fit: cover; border-radius: 18px; }
