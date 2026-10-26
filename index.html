@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A premium developer portfolio with glassmorphism, motion, and a polished dark/light experience." />
+    <meta name="description" content="Kavindu Sathsara's portfolio — BICT undergraduate, developer, and networking enthusiast." />
     <meta name="theme-color" content="#020617" />
-    <meta property="og:title" content="Arielle Chen | Senior Frontend Engineer" />
-    <meta property="og:description" content="Crafting elegant user experiences with modern frontend engineering." />
+    <meta property="og:title" content="Kavindu Sathsara | BICT Undergraduate" />
+    <meta property="og:description" content="Portfolio of Kavindu Sathsara, a developer and networking enthusiast." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:image" content="assets/images/heroimg.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Arielle Chen | Senior Frontend Engineer" />
-    <meta name="twitter:description" content="Crafting elegant user experiences with modern frontend engineering." />
-    <link rel="canonical" href="https://example.com/" />
+    <meta name="twitter:title" content="Kavindu Sathsara | BICT Undergraduate" />
+    <meta name="twitter:description" content="Portfolio of Kavindu Sathsara, a developer and networking enthusiast." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -46,70 +45,73 @@
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
-          <a href="#blog">Writting</a>
+          <a href="#blog">Writing</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="nav-actions">
-          <a class="btn btn-primary nav-cv" href="assets/Resume.pdf" download>Download CV</a>
-          <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
+          <a class="btn btn-primary nav-cv" href="assets/certificates/My%20CV.pdf" download>Download CV</a>
+          <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation">&#9776;</button>
         </div>
       </div>
-      <div class="container mobile-nav">
+      <nav class="container mobile-nav" id="mobile-navigation" aria-label="Mobile navigation">
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
-        <a href="#blog">Writting</a>
+        <a href="#blog">Writing</a>
         <a href="#contact">Contact</a>
-      </div>
+        <a class="btn btn-primary mobile-cv" href="assets/certificates/My%20CV.pdf" download>Download CV</a>
+      </nav>
     </header>
 
     <main id="main">
+
+      <!-- HERO -->
       <section id="home" class="hero section-shell">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <div class="section-eyebrow">Undergraduate | Networking Enthusiast </div>
-            <h1>Hello <span class="accent">I'm</span> Kavindu Sathsara<br /><span class="accent" data-typing>Undergraduate</span></h1>
-            <p>I'm a BICT undergraduate from Sri Lanka, passionate about software development, networking and building practical digital solutions.</p>
-            <p><strong> in Java, C, HTML, CSS, JavaScript, MySQL, and Git/GitHub.</strong></p>
-            <p><strong> about solving real-world problems through clean, efficient, and reliable code while continuously improving my technical skills.</strong></p>
-            <p><strong> expanding my knowledge in Data Structures & Algorithms, Web Development, Computer Networks, and modern software engineering practices.</strong></p>
-            </p>
+            <div class="section-eyebrow">UNDERGRADUATE | NETWORKING ENTHUSIAST</div>
+            <h1>Hello, <span class="accent">I'm</span> Kavindu Sathsara<br />
+              <span class="hero-role-line"><span class="accent" data-typing></span><span class="typing-cursor" aria-hidden="true">|</span></span>
+            </h1>
+            <p>I'm a BICT undergraduate from Sri Lanka, passionate about software development, networking, and building practical digital solutions.</p>
+            <p>I work with Java, C, HTML, CSS, JavaScript, MySQL, and Git/GitHub. I enjoy solving real-world problems with clean, reliable code while strengthening my knowledge of data structures, web development, and computer networks.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary magnetic" href="assets/Resume.pdf" download>Download CV</a>
+              <a class="btn btn-primary magnetic" href="assets/certificates/My%20CV.pdf" download>Download CV</a>
               <a class="btn btn-secondary magnetic" href="#contact">Contact Me</a>
-              <a class="btn btn-ghost magnetic" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-ghost magnetic" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer noopener">GitHub</a>
             </div>
             <div class="social-row">
-              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" width="22" height="22" />
+              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer noopener" aria-label="GitHub profile">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
               </a>
-              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" width="22" height="22" />
+              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn profile">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
               </a>
-              <a class="social-pill" href="mailto:sathsara77kavindu@gmail.com" aria-label="Email">
-                <img src="https://img.icons8.com/ios-glyphs/48/000000/email.png" alt="Email" width="22" height="22" />
+              <a class="social-pill" href="mailto:sathsara77kavindu@gmail.com" aria-label="Send email">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
               </a>
-              <a class="social-pill" href="https://www.blogger.com/profile/10187945015460676433" target="_blank" rel="noreferrer" aria-label="Blogger">
-                <img src="https://img.icons8.com/ios-glyphs/48/000000/blogger.png" alt="Blogger" width="22" height="22" />
+              <a class="social-pill" href="https://www.blogger.com/profile/10187945015460676433" target="_blank" rel="noreferrer noopener" aria-label="Blogger profile">
+                <i class="fa-brands fa-blogger-b" aria-hidden="true"></i>
               </a>
             </div>
           </div>
           <div class="hero-visual reveal">
             <div class="orb blob"></div>
             <div class="hero-card glass">
-              <img class="hero-image" src="./assets/images/heroimg.jpg" alt="Portrait of Arielle Chen" loading="eager" />
+              <img class="hero-image" src="./assets/images/heroimg.jpg" alt="Portrait of Kavindu Sathsara" fetchpriority="high" />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about" class="section-shell">
-        <div class="container about-grid">
-          <div class="section-card reveal about-content">
+        <div class="container">
+          <div class="section-card reveal about-content about-solo">
             <div class="section-heading">
               <div class="section-eyebrow">About Me</div>
+              <h2>A little about who I am</h2>
             </div>
-
             <div class="about-summary">
               <p>Hi, I'm Kavindu Sathsara, a BICT undergraduate passionate about networking, software development, and creative technology.</p>
               <p>I'm currently strengthening my skills in Cisco networking, Linux, Java, front-end development, and data structures while building practical solutions.</p>
@@ -117,79 +119,24 @@
               <p>I also work creatively through design and technical writing, combining problem-solving with clear communication.</p>
             </div>
           </div>
-
-          <aside class="focus-panel reveal" aria-label="My focus areas">
-            <div class="focus-card glass">
-              <div class="focus-header">
-                <span class="focus-kicker">Core strengths</span>
-                <h3>MY FOCUS</h3>
-              </div>
-
-              <div class="network-visual" aria-hidden="true">
-                <span class="node node-1"></span>
-                <span class="node node-2"></span>
-                <span class="node node-3"></span>
-                <span class="node node-4"></span>
-                <span class="node node-5"></span>
-                <span class="connection c-1"></span>
-                <span class="connection c-2"></span>
-                <span class="connection c-3"></span>
-                <span class="connection c-4"></span>
-              </div>
-
-              <div class="focus-list">
-                <article class="focus-item focus-primary">
-                  <div class="focus-icon">🌐</div>
-                  <div class="focus-copy">
-                    <h4>Computer Networking</h4>
-                    <p>Cisco  Linux  Routing  Network Security</p>
-                  </div>
-                </article>
-
-                <article class="focus-item">
-                  <div class="focus-icon">💻</div>
-                  <div class="focus-copy">
-                    <h4>Software Development</h4>
-                    <p>Java  JavaScript  Data Structures</p>
-                  </div>
-                </article>
-
-                <article class="focus-item">
-                  <div class="focus-icon">🎨</div>
-                  <div class="focus-copy">
-                    <h4>Creative Design</h4>
-                    <p>Graphic Design  UI/UX</p>
-                  </div>
-                </article>
-
-                <article class="focus-item">
-                  <div class="focus-icon">✍️</div>
-                  <div class="focus-copy">
-                    <h4>Knowledge Sharing</h4>
-                    <p>Technical Writing  Continuous Learning</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </aside>
         </div>
       </section>
 
+      <!-- EDUCATION -->
       <section id="education" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
             <div class="section-eyebrow">Education</div>
-            <h2>Academic milestones and professional learning.</h2>
+            <h2>Academic milestones and professional learning</h2>
           </div>
-
           <div class="education-stack reveal">
             <article class="education-card section-card">
               <div class="edu-card">
                 <div class="edu-media">
                   <div class="edu-icon">
-                    <img src="./assets/icons/SEUSL.png" alt="University logo" />
+                    <img src="./assets/icons/SEUSL.png" alt="South Eastern University of Sri Lanka logo" />
                   </div>
-                  <div class="edu-dates">2024 — Present</div>
+                  <div class="edu-dates">2024 &mdash; Present</div>
                 </div>
                 <div class="edu-content">
                   <div class="edu-eyebrow">Higher Education</div>
@@ -201,14 +148,13 @@
                 </div>
               </div>
             </article>
-
             <article class="education-card section-card">
               <div class="edu-card">
                 <div class="edu-media">
                   <div class="edu-icon">
-                    <img src="./assets/icons/Ananda.jpg" alt="A/L logo" />
+                    <img src="./assets/icons/Ananda.jpg" alt="A/L school logo" />
                   </div>
-                  <div class="edu-dates">2019 - 2022</div>
+                  <div class="edu-dates">2019 &ndash; 2022</div>
                 </div>
                 <div class="edu-content">
                   <div class="edu-eyebrow">Advanced Level (A/L)</div>
@@ -221,18 +167,17 @@
                 </div>
               </div>
             </article>
-
             <article class="education-card section-card">
               <div class="edu-card">
                 <div class="edu-media">
                   <div class="edu-icon">
-                    <img src="./assets/icons/Adikaram.jpg" alt="School logo" />
+                    <img src="./assets/icons/Adikaram.jpg" alt="E.W Adikaram College logo" />
                   </div>
                 </div>
                 <div class="edu-content">
                   <div class="edu-eyebrow">School Education</div>
                   <h3>E.W Adikaram College, Mathugama</h3>
-                  <p class="muted">GCE Ordinary Level - strong foundation in mathematics and science</p>
+                  <p class="muted">GCE Ordinary Level &mdash; strong foundation in mathematics and science</p>
                   <ul>
                     <li>Completed O/L with distinction in Mathematics, English and Science.</li>
                     <li>Built fundamentals in problem solving, logical reasoning and data interpretation.</li>
@@ -244,34 +189,34 @@
         </div>
       </section>
 
+      <!-- CERTIFICATES -->
       <section id="certificates" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
-            <div class="section-eyebrow">Certificates</div>
-            <h2>Professional Certifications &amp; Learning Achievements</h2>
-            <p>Continuous learning, professional certifications, and technical growth.</p>
+            <div class="section-eyebrow">Certifications &amp; Achievements</div>
+            <h2>CERTIFICATIONS &amp; ACHIEVEMENTS</h2>
+            <p class="section-desc muted">Every certificate represents another step in my journey to becoming a better developer.</p>
           </div>
-
-          <div class="certificate-carousel reveal">
-            <div class="certificate-viewport">
-              <div class="certificate-track" id="certificate-carousel" aria-live="polite">
-                <!-- Slides populated by JavaScript -->
-              </div>
-
-              <button class="carousel-control carousel-prev" type="button" aria-label="Previous certificate">❮</button>
-              <button class="carousel-control carousel-next" type="button" aria-label="Next certificate">❯</button>
+          <div class="filter-row cert-filter-row reveal">
+            <div class="filter-group" id="cert-filters" role="group" aria-label="Certificate category filters">
+              <button class="filter-chip active cert-filter" type="button" data-filter="all">All</button>
+              <button class="filter-chip cert-filter" type="button" data-filter="Networking">Networking</button>
+              <button class="filter-chip cert-filter" type="button" data-filter="Programming">Programming</button>
+              <button class="filter-chip cert-filter" type="button" data-filter="Web">Web Development</button>
+              <button class="filter-chip cert-filter" type="button" data-filter="Cloud">Linux &amp; Cloud</button>
             </div>
-
-            <div class="carousel-indicators" id="carousel-indicators" aria-label="Certificate slides"></div>
+          </div>
+          <div class="cert-grid reveal" id="cert-grid" aria-live="polite" aria-label="Certificate list">
           </div>
         </div>
       </section>
 
+      <!-- SKILLS -->
       <section id="skills" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
-            <!-- <div class="section-eyebrow">Skills</div> -->
-
+            <div class="section-eyebrow">Skills</div>
+            <h2>Technologies I work with</h2>
           </div>
           <div class="skill-carousel reveal" aria-label="Skills carousel">
             <div class="skill-track">
@@ -281,65 +226,107 @@
               <span class="skill-pill java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" /><span>Java</span></span>
               <span class="skill-pill javafx"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JavaFX" /><span>JavaFX</span></span>
               <span class="skill-pill python"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" /><span>Python</span></span>
-              <span class="skill-pill git"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" /><span>Git</span></span>
-              <span class="skill-pill github"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" /><span>GitHub</span></span>
-              <span class="skill-pill html"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" /><span>HTML</span></span>
-              <span class="skill-pill css"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" /><span>CSS</span></span>
-              <span class="skill-pill js"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" /><span>JavaScript</span></span>
-              <span class="skill-pill java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" /><span>Java</span></span>
-              <span class="skill-pill javafx"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JavaFX" /><span>JavaFX</span></span>
-              <span class="skill-pill python"><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" /><span>Python</span></span>
-              <span class="skill-pill git"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" /><span>Git</span></span>
-              <span class="skill-pill github"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" /><span>GitHub</span></span>
+              <span class="skill-pill c-lang"><img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" /><span>C</span></span>
+              <span class="skill-pill mysql"><img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL" /><span>MySQL</span></span>
+              <span class="skill-pill git"><i class="fa-brands fa-git-alt skill-icon-fa" aria-hidden="true"></i><span>Git</span></span>
+              <span class="skill-pill github-pill"><i class="fa-brands fa-github skill-icon-fa" aria-hidden="true"></i><span>GitHub</span></span>
+              <span class="skill-pill html" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="" /><span>HTML</span></span>
+              <span class="skill-pill css" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="" /><span>CSS</span></span>
+              <span class="skill-pill js" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="" /><span>JavaScript</span></span>
+              <span class="skill-pill java" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="" /><span>Java</span></span>
+              <span class="skill-pill javafx" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="" /><span>JavaFX</span></span>
+              <span class="skill-pill python" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/python.png" alt="" /><span>Python</span></span>
+              <span class="skill-pill c-lang" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="" /><span>C</span></span>
+              <span class="skill-pill mysql" aria-hidden="true"><img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="" /><span>MySQL</span></span>
+              <span class="skill-pill git" aria-hidden="true"><i class="fa-brands fa-git-alt skill-icon-fa" aria-hidden="true"></i><span>Git</span></span>
+              <span class="skill-pill github-pill" aria-hidden="true"><i class="fa-brands fa-github skill-icon-fa" aria-hidden="true"></i><span>GitHub</span></span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section id="projects" class="section-shell">
+      <!-- PROJECTS -->
+      <section id="projects" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
             <div class="section-eyebrow">Projects</div>
-            <h2>Selected work with measurable product impact.</h2>
-            <p>Each project balances storytelling, precision engineering, and a strong product lens.</p>
+            <h2>Work and learning, built in public.</h2>
           </div>
-          <div class="filter-row reveal">
-            <div class="filter-group">
-              <button class="filter-chip active" type="button" data-filter="all">All</button>
-              <button class="filter-chip" type="button" data-filter="web">Web</button>
-              <button class="filter-chip" type="button" data-filter="security">Security</button>
-              <button class="filter-chip" type="button" data-filter="product">Product</button>
-            </div>
-            <input class="search-input" id="project-search" type="search" placeholder="Search projects" aria-label="Search projects" />
-          </div>
-          <div class="project-grid">
-            <article class="project-card section-card reveal" data-category="web" data-title="NeonOS" data-summary="A terminal-inspired operating system UI with immersive motion." tabindex="0">
-              <h3>NeonOS</h3>
-              <p>A terminal-inspired operating system UI with immersive motion.</p>
-              <div class="meta"><span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JS</span></div>
-              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+          <div class="project-grid" id="projects-grid">
+            <article class="project-card section-card reveal">
+              <div class="project-img-wrap">
+                <div class="project-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Gym Website Frontend</h3>
+                <p class="muted">A responsive frontend for a gym website featuring a modern UI with sections for services, pricing, trainers, and contact information.</p>
+                <div class="project-tags">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JavaScript</span>
+                </div>
+              </div>
+              <div class="actions project-actions">
+                <a class="btn btn-secondary" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
             </article>
-            <article class="project-card section-card reveal" data-category="security" data-title="Signal Vault" data-summary="A secure dashboard for privacy workflows and threat analytics." tabindex="0">
-              <h3>Signal Vault</h3>
-              <p>A secure dashboard for privacy workflows and threat analytics.</p>
-              <div class="meta"><span class="badge">Security</span><span class="badge">Analytics</span></div>
-              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            <article class="project-card section-card reveal">
+              <div class="project-img-wrap">
+                <div class="project-placeholder placeholder-blue" aria-hidden="true">
+                  <i class="fa-solid fa-bus"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>BusLink.lk <span class="project-tag-inline">Group Project</span></h3>
+                <p class="muted">A Sri Lankan bus information and route management web platform developed as a group project to help commuters find routes and schedules easily.</p>
+                <div class="project-tags">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JavaScript</span>
+                  <span class="badge">MySQL</span>
+                </div>
+              </div>
+              <div class="actions project-actions">
+                <a class="btn btn-secondary" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
             </article>
-            <article class="project-card section-card reveal" data-category="product" data-title="Lumen Commerce" data-summary="Commerce experience focused on high-conversion storytelling." tabindex="0">
-              <h3>Lumen Commerce</h3>
-              <p>Commerce experience focused on high-conversion storytelling.</p>
-              <div class="meta"><span class="badge">UX</span><span class="badge">Design</span><span class="badge">Performance</span></div>
-              <div class="actions"><a class="btn btn-primary" href="#">Live Demo</a><a class="btn btn-ghost" href="#">GitHub</a></div>
+            <article class="project-card section-card reveal">
+              <div class="project-img-wrap">
+                <div class="project-placeholder placeholder-purple" aria-hidden="true">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>BeautyHub <span class="project-tag-inline">E-commerce</span></h3>
+                <p class="muted">An e-commerce website for beauty and cosmetic products with product browsing, cart functionality, and an attractive storefront UI.</p>
+                <div class="project-tags">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JavaScript</span>
+                </div>
+              </div>
+              <div class="actions project-actions">
+                <a class="btn btn-secondary" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
             </article>
           </div>
         </div>
-      </section> -->
+      </section>
 
+      <!-- BLOG -->
       <section id="blog" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
             <div class="section-eyebrow">Blog</div>
-            <h2>Notes on Blogger about fundamentals of programming.</h2>
+            <h2>Notes on programming and technology.</h2>
           </div>
           <div class="filter-row reveal">
             <div class="filter-group">
@@ -350,40 +337,46 @@
             <input class="search-input" id="blog-search" type="search" placeholder="Search posts" aria-label="Search blog posts" />
           </div>
           <div class="blog-grid">
-            <article class="blog-card reveal">
+            <article class="blog-card reveal" data-category="engineering" data-title="Introduction to Programming and Problem Solving" data-summary="A short introduction covering core programming concepts and problem-solving techniques.">
               <h3>Introduction to Programming and Problem Solving</h3>
               <p class="muted">A short introduction covering core programming concepts and problem-solving techniques.</p>
-              <div class="actions"><a class="btn btn-secondary" href="https://kstechnexus.blogspot.com/2026/08/introduction-to-programming-and-problem.html" target="_blank" rel="noreferrer">Read article</a></div>
+              <div class="actions"><a class="btn btn-secondary" href="https://kstechnexus.blogspot.com/2026/08/introduction-to-programming-and-problem.html" target="_blank" rel="noreferrer noopener">Read article</a></div>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
             <div class="section-eyebrow">Contact</div>
-            <h2 class="contact-title">Say Hii... <span class="gradient">Let’s talk</span></h2>
+            <h2 class="contact-title">Say hello. <span class="gradient">Let's talk.</span></h2>
             <p class="contact-sub">Have a project, a research idea, or just want to talk shop? My inbox is open.</p>
           </div>
-
           <div class="contact-hero glass reveal">
             <div class="contact-actions">
-              <a class="btn btn-whatsapp" href="https://wa.me/94774213415" target="_blank" rel="noreferrer">WhatsApp Me</a>
-              <a class="btn btn-outline" href="mailto:sathsaraa77kavindu@gmail.com">Schedule a Meeting</a>
+              <a class="btn btn-whatsapp" href="https://wa.me/94774213415" target="_blank" rel="noreferrer noopener">WhatsApp Me</a>
+              <a class="btn btn-outline" href="mailto:sathsara77kavindu@gmail.com">Send an Email</a>
             </div>
-
             <div class="contact-pills">
-              <a class="contact-pill" href="mailto:sathsaraa77kavindu@gmail.com">✉ sathsaraa77kavindu@gmail.com</a>
-              <div class="contact-pill">📞 +94 774 213 415</div>
-              <div class="contact-pill">📍 Matugama, Sri Lanka</div>
+              <a class="contact-pill" href="mailto:sathsara77kavindu@gmail.com">sathsara77kavindu@gmail.com</a>
+              <div class="contact-pill">+94 774 213 415</div>
+              <div class="contact-pill">Matugama, Sri Lanka</div>
             </div>
-
             <div class="contact-social">
-              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer"><img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="GitHub" width="20" height="20"/></a>
-              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer"><img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="LinkedIn" width="20" height="20"/></a>
-              <a class="social-pill" href="mailto:sathsaraa77kavindu@gmail.com" aria-label="Email"><img src="https://img.icons8.com/ios-glyphs/48/000000/email.png" alt="Email" width="20" height="20"/></a>
-              <a class="social-pill" href="https://www.blogger.com/profile/10187945015460676433" target="_blank" rel="noreferrer"><img src="https://img.icons8.com/ios-glyphs/48/000000/blogger.png" alt="Blogger" width="20" height="20"/></a>
+              <a class="social-pill" href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noreferrer noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a class="social-pill" href="https://www.linkedin.com/in/kavindu-sathsara-393956353/?skipRedirect=true" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a class="social-pill" href="mailto:sathsara77kavindu@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+              <a class="social-pill" href="https://www.blogger.com/profile/10187945015460676433" target="_blank" rel="noreferrer noopener" aria-label="Blogger">
+                <i class="fa-brands fa-blogger-b" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -392,28 +385,16 @@
 
     <footer class="site-footer">
       <div class="container footer-main">
-
-        <!-- Brand / About -->
         <div class="footer-brand">
-          <!-- <a href="#home" class="footer-logo">KS</a> -->
-
           <h3>Kavindu Sathsara</h3>
-
-          <p>
-            IT undergraduate, developer and networking enthusiast.
-            I write about programming, networking and practical projects.
-          </p>
-
+          <p>IT undergraduate, developer and networking enthusiast. I write about programming, networking and practical projects.</p>
           <div class="footer-status">
             <span class="status-dot"></span>
             <span>Available for opportunities</span>
           </div>
         </div>
-
-        <!-- Navigation -->
         <div class="footer-column">
           <h4>Explore</h4>
-
           <nav class="footer-nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -423,11 +404,8 @@
             <a href="#contact">Contact</a>
           </nav>
         </div>
-
-        <!-- Focus -->
         <div class="footer-column">
           <h4>Focus</h4>
-
           <ul>
             <li>Software Development</li>
             <li>Computer Networking</li>
@@ -435,85 +413,35 @@
             <li>Linux &amp; Systems</li>
           </ul>
         </div>
-
-        <!-- Connect -->
         <div class="footer-column">
           <h4>Connect</h4>
-
           <div class="footer-socials">
-
-            <a
-              href="https://github.com/Kavindu-Sathsara"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
+            <a href="https://github.com/Kavindu-Sathsara" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <i class="fa-brands fa-github"></i>
               <span>GitHub</span>
             </a>
-
-            <a
-              href="https://www.linkedin.com/in/kavindu-sathsara-393956353/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
+            <a href="https://www.linkedin.com/in/kavindu-sathsara-393956353/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
               <span>LinkedIn</span>
             </a>
-
-            <a
-              href="mailto:sathsara77kavindu@gmail.com"
-              aria-label="Email"
-            >
+            <a href="mailto:sathsara77kavindu@gmail.com" aria-label="Email">
               <i class="fa-solid fa-envelope"></i>
               <span>Email</span>
             </a>
-
           </div>
         </div>
-
       </div>
-
       <div class="container">
         <div class="footer-sep"></div>
       </div>
-
       <div class="container footer-bottom">
-
-        <p>
-          © <span id="year"></span> Kavindu Sathsara.
-          All rights reserved.
-        </p>
-
-        <p class="footer-made">
-          Designed &amp; built by Kavindu 👾
-        </p>
-
+        <p>&copy; <span id="year"></span> Kavindu Sathsara. All rights reserved.</p>
+        <p class="footer-made">Designed &amp; built by Kavindu &#x1F47E;</p>
       </div>
     </footer>
 
-    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <button class="back-to-top" type="button" aria-label="Back to top">&#8593;</button>
     <div class="toast" role="status" aria-live="polite"></div>
-
-    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
-      <div class="modal" role="dialog" aria-modal="true">
-        <div class="modal-header">
-          <h3>Project preview</h3>
-          <button class="close-btn" type="button" aria-label="Close preview">×</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-backdrop" id="lightbox" aria-hidden="true">
-      <div class="modal">
-        <div class="modal-header">
-          <h3>Photography preview</h3>
-          <button class="close-btn" type="button" aria-label="Close preview">×</button>
-        </div>
-        <img src="" alt="Photography preview" />
-      </div>
-    </div>
 
     <div class="modal-backdrop certificate-modal-backdrop" id="certificate-modal" aria-hidden="true">
       <div class="modal certificate-modal-body" role="dialog" aria-modal="true" aria-labelledby="certificate-modal-title"></div>
@@ -525,7 +453,6 @@
     <script src="js/navigation.js"></script>
     <script src="js/about.js"></script>
     <script src="js/projects.js"></script>
-    <script src="js/gallery.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/typing.js"></script>
     <script src="js/contact.js"></script>
@@ -534,4 +461,3 @@
     <script src="js/certificates.js"></script>
   </body>
 </html>
-
